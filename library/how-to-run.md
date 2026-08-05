@@ -19,6 +19,8 @@ Append to the end of `journal/YYYY-MM.md`. **Always put the destination shelf in
 - An entry without `| shelf:` cannot be picked up by filing and will never reach a shelf
 - Use the shelf's **filename without `.md`** as the name (the list lives in `catalog.md`)
 - For two destinations: `| shelf:work,ai-tips`
+- **Put `| shelf:` at the very end of the heading, exactly once.** Never let that string appear in the title part
+  (it breaks destination detection). Readers treat only the last one on the heading line as the destination
 - Never paste raw logs (full transcripts, full error dumps). Keep it to the point
 - Chit-chat sessions and work not worth 5 lines: **don't write anything**
 
