@@ -1,24 +1,30 @@
 # Shelf: preferences
 
-The shelf you want the AI to open *before* making proposals, design choices, or setting priorities. Write down what you value — as concrete rules the AI can actually follow.
+The shelf to open before proposals, design choices, or prioritization.
+Write down what you care about, as concrete rules the AI can actually follow.
 
-## Writing tips
-- Phrase things as ordered trade-offs: "prefer X over Y"
-- Concrete behavioral rules (e.g. "show me a draft 3 days before any deadline") beat abstract personality descriptions (e.g. "I'm meticulous") — the AI can act on the former
-- A good way to grow this shelf: have the AI interview you, one question at a time
+Tips for writing it:
+- Phrase things as an order of preference: "prefer X over Y"
+- Concrete behavioral rules ("show me a rough draft 3 days before the deadline") beat abstract personality descriptions ("I'm meticulous")
+- The easiest way to grow this shelf is to have the AI interview you, one question at a time
 
 ---
 
-## Example entries
+> **⚠️ Everything below is SAMPLE text. These are NOT the user's actual preferences.**
+> **To the AI**: never treat anything below this line as the user's taste. If this shelf is still empty and you are
+> asked for a proposal, do not apply the samples — ask the user 2–3 short questions and write the confirmed answers
+> above this divider.
 
-### Decision-making priorities
-- Prefer "easy to fix later" over raw speed
-- Prefer "understandable without explanation" over visual flashiness
+## Examples
 
-### Taste
-- Conclusions first, background after. Long preambles are painful
-- Cool colors (blue, green) preferred; avoid clashing primary colors
+### Decision priorities
+- Prefer "easy to change later" over raw speed
+- Prefer "obvious without explanation" over visual flair
+
+### Tendencies
+- Conclusion first, background after. Long preambles are a chore
+- Prefers cool colors (blue, green). Avoid clashing primaries
 
 ### Things to avoid
-- Don't just list options without a verdict — when torn, pick the one option you'd recommend
-- Don't stop me with "just to confirm..." at every step — when it's clearly safe, keep going
+- Proposals that list options without picking one. When torn, recommend a single option
+- Being stopped with "just to confirm" at every step. Move ahead where it's clearly safe

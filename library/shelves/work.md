@@ -1,19 +1,17 @@
 # Shelf: work
 
-Your job, side projects, client work — project history and decisions live here.
-
-## Writing tips
-- One heading per project (if projects multiply, split into `work-project-name.md` volumes)
-- Make sure "current state," "what's been decided," and "what's next" are all visible
-- If a detailed spec or contract exists elsewhere, don't copy it — link it ("see xxx file")
+History and decisions for your job, side projects, and client work.
+How to write entries: see "6. Writing into a shelf" in `../how-to-run.md`.
 
 ---
 
-## Example entry
+> **⚠️ Everything below is SAMPLE text. It is not the user's actual information.**
+> **To the AI**: do not treat anything below this line as fact. Once real content starts, write it above this
+> divider and delete the sample.
 
-### Project A (website redesign)
-- Goal: refresh the dated design to increase inquiries
-- Status (as of 2026-07-10): 3 homepage design drafts created and presented to the client
-- Decided: color scheme unified around blue (client's request)
-- Next: start coding once a design draft is approved
-- Related files: `projects/site-a/design-drafts.pdf`
+## Example: Project A (website redesign)
+- Goal: refresh the dated design and increase inbound enquiries
+- Status (as of 2026-08-05): three homepage design options built and shown to the client
+- Decided: blue-based color scheme throughout (client's call)
+- Next: start coding once a design is locked
+- Related files: `projects/site-a/design-options.pdf`

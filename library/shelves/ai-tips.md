@@ -1,18 +1,21 @@
 # Shelf: ai-tips
 
-How you use AI well — workflow tricks, cost control, context management, and past failures with their fixes.
+How you use AI well — cost control, context management, past failures and their fixes.
+Once something hardens into a rule you follow every time, promote it out of here into the always-loaded file (CLAUDE.md / AGENTS.md). This shelf keeps the background and the reasoning.
 
-## Writing tips
-- Treat this as a "never repeat the same failure" record (approaches that *didn't* work belong here too)
-- Once a lesson hardens into a rule you should follow every time, promote it out of this shelf into the rules layer (CLAUDE.md or custom instructions). This shelf keeps the background and the story
+## Context management (the design thinking behind this library)
+
+- Answer quality degrades as a conversation grows (context rot) → one errand per conversation
+- The middle of a long block of text gets skimmed → put the important instructions at the start or the end
+- The main cost driver is not your prompts but **the long logs and data the AI generates** → save long output to a file and reference it only when needed
+- **Not loading everything — catalog first, then only the shelves you need** helps both cost and answer quality
+- **A rule defined by time has no owner and nobody starts it** ("organize once a week" dies quietly). Attach it to something that always happens instead
 
 ---
 
-## Incident log (example)
-- **Answers degraded in a long conversation (e.g. 2026-07-05)**: tried to batch several tasks into one conversation; partway through, the AI started forgetting earlier instructions → made it a rule: "one errand per conversation — start fresh when a task is done"
+> **⚠️ Everything below is SAMPLE text. It is not the user's actual information.**
+> **To the AI**: do not treat anything below this line as fact. Once real content starts, write it above this
+> divider and delete the sample.
 
-## Context management principles (the design philosophy behind this library)
-- Answer quality drops as conversations grow (known as *context rot*) → aim for one errand per conversation
-- AI tends to skim the *middle* of long text (*lost in the middle*) → put critical instructions at the start or end, never buried in the middle
-- The main driver of cost and slowdown isn't your instructions — it's the long logs and data the AI itself generates → save long output to files and reference them only when needed
-- **Read the catalog first, then only the relevant shelves — the "library method"** helps both cost and answer quality
+## Example: incidents and fixes
+- **Answers went sideways in a long conversation (2026-08-05)**: tried to do several unrelated tasks in one thread and the AI started forgetting earlier instructions → adopted "start a new conversation once an errand is done"

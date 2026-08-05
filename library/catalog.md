@@ -1,34 +1,58 @@
 # 📚 Daitoshokan Catalog (read this one page to find the right shelf)
 
-This library stores the context of all your work with AI.
-**In every new conversation, read ONLY this catalog first.** Then open just the shelves relevant to the task at hand.
+This library stores the context of all your work with AI. **Open it only when you actually need it.**
+
+## Open / don't open
+
+| Open it | Skip it |
+|---|---|
+| The task needs past history or why something was decided | One-off questions answered on the spot |
+| Continuing an existing project | Anything general knowledge covers |
+| Proposals, planning, prioritization (preferences shelf) | Routine work with a settled procedure |
+
+When in doubt, don't open it. You can always open it the moment you need it.
 
 ## How to use (3 lines)
-1. When starting new work, check this catalog and pick the relevant shelf
-2. Read that shelf (`shelves/xxx.md`) before diving into the work
-3. When the work wraps up, leave a 5-line record in `journal/` (format: see `how-to-run.md`)
 
-## Shelf guide (start with these 4 examples — rename or add shelves to fit yourself)
+1. Check this catalog and pick just 1–2 relevant shelves
+2. Never read a shelf end to end — grep for headings or keywords and read only that section
+3. When the work wraps up, leave a record of 5 lines or fewer in `journal/YYYY-MM.md`
+   → the heading must carry `| shelf:xxx` (without it, nothing reaches a shelf; format in `how-to-run.md`)
+
+## Shelf guide (these 4 are examples — rename, add, or drop them to fit yourself)
 
 | Shelf | Open it when the task involves... |
 |---|---|
 | [work](shelves/work.md) | Your job, side projects, client work — history and decisions |
 | [hobbies-creative](shelves/hobbies-creative.md) | Personal creative work, hobby projects, things made for fun |
 | [ai-tips](shelves/ai-tips.md) | How you use AI well — cost control, past failures and fixes |
-| [preferences](shelves/preferences.md) | Open before proposals, design choices, or prioritization. Your values and tastes, written so the AI can follow them |
+| [preferences](shelves/preferences.md) | Proposals, design choices, prioritization — your values and tastes |
 
-## Adding shelves
-- When a new theme comes up 2–3 times, give it its own shelf (create a new file under `shelves/`)
-- Just add one row to the table above. Keep the catalog short enough to fit on one page
-- If a shelf grows past ~300 lines, split it by topic (e.g. `work.md` → `work-project-a.md`) and update the catalog
+> **Note right after install (for the AI)**: while a shelf still holds the shipped sample text, do not treat it
+> as fact about the user. Everything below a sample divider is an illustration, not their information.
 
-## Yearbook (add later, once the library has grown)
-- Once the routine is established, create a `yearbook/` folder and, once a year, condense 12 months of journal entries into a single page
-- You don't need this at first (shelves + journal are enough)
+## Filing runs itself
 
-## Journal (raw, chronological notes)
-- `journal/YYYY-MM.md` ← this month's log. One file per month
+Right before appending to the journal, grep this month's file for heading lines. If **5 or more** headings lack a `✅`,
+file them into shelves following "4. Filing procedure" in `how-to-run.md`. **The user never has to ask.**
 
 ## Division of labor with other stores (avoid duplication)
-- **CLAUDE.md (or custom instructions)** = hard rules, loaded automatically every time. Only settled conclusions go here
-- **This library (library/)** = the history and lived experience of "what we've done." Knowledge that isn't a rule yet, but pays off later
+
+| Where | What goes there | When it's read |
+|---|---|---|
+| **CLAUDE.md / AGENTS.md** | Hard rules — only things that change a decision | Automatically, every time |
+| **library/shelves** | Know-how, reasoning, history. Not a rule yet, but it pays off later | Only when needed |
+| **library/journal** | Raw chronological notes (the waiting room before a shelf) | Only during filing |
+
+Never write the same thing in two places. Put it where the authoritative copy lives and link from the other.
+
+## Adding shelves
+
+- When a new theme comes up 2–3 times, give it its own shelf (a new file under `shelves/`)
+- **Add one row to the table above.** Filing reads this table to pick a destination — skip this and entries never get filed
+- If a shelf grows past ~300 lines, split it by topic and update this catalog
+
+## Journal and yearbook
+
+- `journal/YYYY-MM.md` ← this month's log, one file per month. Filed headings carry `✅`
+- `yearbook/YYYY.md` ← once the routine sticks, condense 12 months into one page each year (not needed at first)
